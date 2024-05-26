@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+#userBox{
+    background-color: #3300d9;
+}
+
+#animeBox{
+    background-color: #ffffff;
+}
+
+.genrateBtn, .refresh{
+    display: inline-block;
+    padding: 6px 20px;
+    margin-top: 4%;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: large;
+    background-color: #d90000;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.showName{
+    padding: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    color: #d90000;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+}
+
+.mainHeading{
+    margin: 2% 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+label[for="userImg"]{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0px 6px;
+}
+
+#userImg{
+    display: none;
+}
+
+.refresh{
+    background-color:#3300d9;
+    font-weight: bold;
+    width: 40%;
+    display: none;
+}
+
+.red{
+    border: 5px solid #d90000;
+}
+
+.addBtn{
+    display: block;
+    margin: 4% auto;
+}
+
+.info-section{
+    margin: auto;
+    width: 50%;
+    color: #c7c7c7;
+}
+
+.footer p{
+    color: gray;
+}
+
+/* Individual Blog Page New Layout */
+.social-share-contaniner{
+    position: relative;
+    padding: 16px;
+    margin-top: 16.6rem;
+  }
+  
+  .social-share-contaniner a{
+    padding: 0px 10px;
+    transition: all 500ms;
+  }
+  
+  .social-share-contaniner a i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .social-share-contaniner a:hover{
+    transform: scale(1.1);
+  }
+  
+  .social-share-contaniner a i[class="fa fa-facebook"]{
+    color: #4267B2;
+  }
+  
+  .social-share-contaniner a i[class="fa fa-reddit"]{
+    color: #FF5700;
+  }
+  
+  .social-share-contaniner a i[class="fa fa-twitter"]{
+    color: #1DA1F2;
+  }
+  
+  .social-share-contaniner a i[class="fa fa-linkedin"]{
+    color: #0A66C2;
+  }
+
+  .social-share-contaniner a i[class="fa fa-whatsapp"]{
+    color: #25D366;
+  }
+
+
+
+
+/* Media Queries */
+@media (max-width:560px){
+    .wrapper{
+        margin-top: 15%;
+    }
+    .box{
+        height: 260px;
+    }
+    label[for="userImg"]{
+        font-size: 13px;
+    }
+    .genrateBtn{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .addBtn{
+        width: 18%;
+    }
+    .info-section{
+        width: 90%;
+    }
+}
